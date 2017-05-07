@@ -43,8 +43,7 @@ template {
   display: none;
 }
 a {
-  background-color: transparent;
-    background: rgba(241,231,103,1);
+background: rgba(241,231,103,1);
 background: -moz-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
 background: -webkit-gradient(left top, right top, color-stop(0%, rgba(241,231,103,1)), color-stop(100%, rgba(254,182,69,1)));
 background: -webkit-linear-gradient(left, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);
