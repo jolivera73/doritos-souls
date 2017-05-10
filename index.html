@@ -182,8 +182,13 @@
 			
 			$(".item").mouseleave(function() {
 			
-				//alert("adios");
-				$(this).removeClass("menu1");
+				var damunt = $(this).attr('id') ;
+				
+				//alert("estas damunt de : " +  damunt );
+				
+				if ( damunt == 'item1' ) { $(this).removeClass("menu1"); } ;
+				if ( damunt == 'item2' ) { $(this).removeClass("menu2"); } ;
+				if ( damunt == 'item3' ) { $(this).removeClass("menu3"); } ;
 		        });   
 		});	
 			
