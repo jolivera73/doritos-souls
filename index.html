@@ -14,6 +14,7 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
+    <!-- carrega de http://materializecss.com/ -->	
     <link href="css/materialize.css" rel="stylesheet">	
 	
     <!-- Custom CSS -->
@@ -164,14 +165,14 @@
 			$(".menu2").mouseenter(function() {
 			
 				//alert("hola");
-				$(".menu2").addClass("menu1");
+				$(this).addClass("menu1");
 				
 		        });   
 			
 			$(".menu2").mouseleave(function() {
 			
 				//alert("adios");
-				$(".menu2").removeClass("menu1");
+				$(this).removeClass("menu1");
 		        });   
 		});	
 			
