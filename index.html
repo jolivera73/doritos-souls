@@ -51,10 +51,10 @@
 		  	background-image: url("image/knight.jpg");  
 		    }
 		  .menu2{
-		  	background-image: url("image/knight.jpg");  
+		  	background-image: url("image/ringedcity.jpg");  
 		    }
 		   .menu3{
-		  	background-image: url("image/knight.jpg");  
+		  	background-image: url("image/XXXX.jpg");  
 		    }
 		  
 	</style>
@@ -172,11 +172,11 @@
 			
 				var damunt = $(this).attr('id') ;
 				
-				alert("estas damunt de : " +  damunt );
+				//alert("estas damunt de : " +  damunt );
 				
-				
-				
-				$(this).addClass("menu1");
+				if ( damunt == 'item1' ) { $(this).addClass("menu1"); } ;
+				if ( damunt == 'item2' ) { $(this).addClass("menu2"); } ;
+				if ( damunt == 'item3' ) { $(this).addClass("menu3"); } ;
 				
 		        });   
 			
