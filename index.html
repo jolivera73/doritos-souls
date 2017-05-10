@@ -62,6 +62,57 @@
 </head>
 
 <body>    
+	
+	<nav class="navbar">
+		    <div class="nav-wrapper">
+		      <a href="#" class="brand-logo">Doritos Souls</a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+			<li id="item1" class="item"><a href="demon's_souls.html"> Demon Souls </a></li>
+			<li id="item2" class="item"><a href="dark_souls.html"> Dark Souls </a></li>
+			<li id="item3" class="item"><a href="dark_souls_ii.html"> Dark Souls II </a></li>
+		        <li id="item3" class="item"><a href="dark_souls_iii.html"> Dark Souls III </a></li>
+			<li id="item3" class="item"><a href="bloodborne.html"> Bloodborne</a></li>
+		      </ul>
+		    </div>
+		  </nav>
+	
+	
+
+		<!-- Menu Toggle Script -->
+		<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
+		
+		$(document).ready(function() {
+		   
+			$(".item").mouseenter(function() {
+			
+				var damunt = $(this).attr('id') ;
+				
+				//alert("estas damunt de : " +  damunt );
+				
+				if ( damunt == 'item1' ) { $(this).addClass("menu1"); } ;
+				if ( damunt == 'item2' ) { $(this).addClass("menu2"); } ;
+				if ( damunt == 'item3' ) { $(this).addClass("menu3"); } ;
+				
+		        });   
+			
+			$(".item").mouseleave(function() {
+			
+				var damunt = $(this).attr('id') ;
+				
+				//alert("estas damunt de : " +  damunt );
+				
+				if ( damunt == 'item1' ) { $(this).removeClass("menu1"); } ;
+				if ( damunt == 'item2' ) { $(this).removeClass("menu2"); } ;
+				if ( damunt == 'item3' ) { $(this).removeClass("menu3"); } ;
+		        });   
+		});	
+			
+			
+		</script>
 
 		<!-- NAVBAR -->
 		<!--
@@ -146,54 +197,7 @@
 		</div>	
 	
 
-		  <nav class="navbar">
-		    <div class="nav-wrapper">
-		      <a href="#" class="brand-logo">Logo</a>
-		      <ul id="nav-mobile" class="right hide-on-med-and-down">
-			<li id="item1" class="item"><a href="sass.html">Sass</a></li>
-			<li id="item2" class="item"><a href="badges.html">Components</a></li>
-			<li id="item3" class="item"><a href="collapsible.html">JavaScript</a></li>
-		      </ul>
-		    </div>
-		  </nav>
-	
-	
-
-		<!-- Menu Toggle Script -->
-		<script>
-		$("#menu-toggle").click(function(e) {
-			e.preventDefault();
-			$("#wrapper").toggleClass("toggled");
-		});
-		
-		$(document).ready(function() {
-		   
-			$(".item").mouseenter(function() {
-			
-				var damunt = $(this).attr('id') ;
-				
-				//alert("estas damunt de : " +  damunt );
-				
-				if ( damunt == 'item1' ) { $(this).addClass("menu1"); } ;
-				if ( damunt == 'item2' ) { $(this).addClass("menu2"); } ;
-				if ( damunt == 'item3' ) { $(this).addClass("menu3"); } ;
-				
-		        });   
-			
-			$(".item").mouseleave(function() {
-			
-				var damunt = $(this).attr('id') ;
-				
-				//alert("estas damunt de : " +  damunt );
-				
-				if ( damunt == 'item1' ) { $(this).removeClass("menu1"); } ;
-				if ( damunt == 'item2' ) { $(this).removeClass("menu2"); } ;
-				if ( damunt == 'item3' ) { $(this).removeClass("menu3"); } ;
-		        });   
-		});	
-			
-			
-		</script>
+		  
 
 </body>
 
