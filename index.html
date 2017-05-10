@@ -50,6 +50,12 @@
 		  .menu1{
 		  	background-image: url("image/knight.jpg");  
 		    }
+		  .menu2{
+		  	background-image: url("image/knight.jpg");  
+		    }
+		   .menu3{
+		  	background-image: url("image/knight.jpg");  
+		    }
 		  
 	</style>
  
@@ -144,9 +150,9 @@
 		    <div class="nav-wrapper">
 		      <a href="#" class="brand-logo">Logo</a>
 		      <ul id="nav-mobile" class="right hide-on-med-and-down">
-			<li class="menu2"><a href="sass.html">Sass</a></li>
-			<li class="menu2"><a href="badges.html">Components</a></li>
-			<li class="menu2"><a href="collapsible.html">JavaScript</a></li>
+			<li id="item1" class="item"><a href="sass.html">Sass</a></li>
+			<li id="item2" class="item"><a href="badges.html">Components</a></li>
+			<li id="item3" class="item"><a href="collapsible.html">JavaScript</a></li>
 		      </ul>
 		    </div>
 		  </nav>
@@ -162,14 +168,19 @@
 		
 		$(document).ready(function() {
 		   
-			$(".menu2").mouseenter(function() {
+			$(".item").mouseenter(function() {
 			
-				//alert("hola");
+				var damunt = $(this) ;
+				
+				alert("estas damunt de : " +  damunt );
+				
+				
+				
 				$(this).addClass("menu1");
 				
 		        });   
 			
-			$(".menu2").mouseleave(function() {
+			$(".item").mouseleave(function() {
 			
 				//alert("adios");
 				$(this).removeClass("menu1");
