@@ -48,14 +48,10 @@
 			  opacity: 0.7;
 		   }	  
 		  .menu1{
-		  	background-image: url("image/icona 250x150.png"); 
-			height : 60;
-			width : 40;
+		  	background-image: url("image/icona 250x150.png");
 		    }
 		  .menu2{
 		  	background-image: url("image/icona 250x150.jpg");  
-			height : 40;
-			width : 30;
 		    }
 		   .menu3{
 		  	background-image: url("image/icona 60x40.jpg");  
@@ -102,11 +98,31 @@
 				
 				//alert("estas damunt de : " +  damunt );
 				
-				if ( damunt == 'item1' ) { $(this).addClass("menu1"); } ;
-				if ( damunt == 'item2' ) { $(this).addClass("menu2"); } ;
-				if ( damunt == 'item3' ) { $(this).addClass("menu3"); } ;
-				if ( damunt == 'item4' ) { $(this).addClass("menu4"); } ;
-				if ( damunt == 'item5' ) { $(this).addClass("menu5"); } ;
+				if ( damunt == 'item1' ) { 
+					
+					$(this).addClass("menu1"); 
+					$(this)..css({ 'height': '45px', 'width': '100px' });
+				} ;
+				if ( damunt == 'item2' ) { 
+					
+					$(this).addClass("menu2"); 
+					$(this)..css({ 'height': '45px', 'width': '100px' });
+				} ;
+				if ( damunt == 'item3' ) { 
+					
+					$(this).addClass("menu3"); 
+					$(this)..css({ 'height': '45px', 'width': '100px' });
+				} ;
+				if ( damunt == 'item4' ) { 
+					
+					$(this).addClass("menu4"); 
+					$(this)..css({ 'height': '45px', 'width': '100px' });
+				} ;
+				if ( damunt == 'item5' )  { 
+					
+					$(this).addClass("menu5"); 
+					$(this)..css({ 'height': '45px', 'width': '100px' });
+				} ;
 				
 		        });   
 			
