@@ -1,222 +1,123 @@
--<!DOCTYPE html>
--<html lang="en">
--
--<head>
--
--    <meta charset="utf-8">
--    <meta http-equiv="X-UA-Compatible" content="IE=edge">
--    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
--    <meta name="description" content="">
--    <meta name="author" content="">
--
--    <title>Doritos Souls</title>
--
--    <!-- Bootstrap Core CSS -->
--    <link href="css/bootstrap.css" rel="stylesheet">
--
--    <!-- carrega de http://materializecss.com/ -->	
--    <link href="css/materialize.css" rel="stylesheet">	
--	
--    <!-- Custom CSS -->
--    <link href="css/style.css" rel="stylesheet">
--
--
--    <!-- Bootstrap Core JavaScript -->
--    <script src="js/jquery_321.js"></script>
--    <!--<script src="js/jquery.js"></script>-->
--    <script src="js/bootstrap.js"></script>
--	
--    <script src="js/materialize.js"></script>	
--	
--	<style>
--		  .container {
--			  padding: 80px 120px;
--		  }
--		  .person {
--			  border: 10px solid transparent;
--			  margin-bottom: 25px;
--			  width: 80%;
--			  height: 80%;
--			  opacity: 0.7;
--		  }
--		  .person:hover {
--			  border-color: #f1f1f1;
--		  }
--		  .bg-25 { 
--			background-color: #403E26; /* Color */
--			color: #ffffff;
--			  opacity: 0.7;
--		   }	  
--		  .menu1{
--		  	background-image: url("image/knight.jpg");  
--		    }
--		  .menu2{
--		  	background-image: url("image/ringedcity.jpg");  
--		    }
--		   .menu3{
--		  	background-image: url("image/knight.jpg");  
--		    }
--		   .menu4{
--			background-image: url("image/ringedcity.jpg");  
--		    }
--	       	   .menu5{
--			background-image: url("image/knight.jpg");  
--		    }
--		  
--	</style>
-- 
--</head>
--
--<body>    
--	<nav class="blue-grey darken-3">
--		    <div class="nav-wrapper">
--		      <a href="https://jolivera73.github.io/doritos-souls" class="brand-logo">Doritos Souls</a>
--		      <ul id="nav-mobile" class="right hide-on-med-and-down">
--			<li id="item1" class="item"><a href="demon's_souls.html"> Demon Souls </a></li>
--			<li id="item2" class="item"><a href="dark_souls.html"> Dark Souls </a></li>
--			<li id="item3" class="item"><a href="dark_souls_ii.html"> Dark Souls II </a></li>
--		        <li id="item4" class="item"><a href="dark_souls_iii.html"> Dark Souls III </a></li>
--			<li id="item5" class="item"><a href="bloodborne.html"> Bloodborne</a></li>
--		      </ul>
--		    </div>
--		  </nav>
--	
--	
--
--		<!-- Menu Toggle Script -->
--		<script>
--		$("#menu-toggle").click(function(e) {
--			e.preventDefault();
--			$("#wrapper").toggleClass("toggled");
--		});
--		
--		$(document).ready(function() {
--		   
--			$(".item").mouseenter(function() {
--			
--				var damunt = $(this).attr('id') ;
--				
--				//alert("estas damunt de : " +  damunt );
--				
--				if ( damunt == 'item1' ) { $(this).addClass("menu1"); } ;
--				if ( damunt == 'item2' ) { $(this).addClass("menu2"); } ;
--				if ( damunt == 'item3' ) { $(this).addClass("menu3"); } ;
--				if ( damunt == 'item4' ) { $(this).addClass("menu4"); } ;
--				if ( damunt == 'item5' ) { $(this).addClass("menu5"); } ;
--				
--		        });   
--			
--			$(".item").mouseleave(function() {
--			
--				var damunt = $(this).attr('id') ;
--				
--				//alert("estas damunt de : " +  damunt );
--				
--				if ( damunt == 'item1' ) { $(this).removeClass("menu1"); } ;
--				if ( damunt == 'item2' ) { $(this).removeClass("menu2"); } ;
--				if ( damunt == 'item3' ) { $(this).removeClass("menu3"); } ;
--				if ( damunt == 'item4' ) { $(this).removeClass("menu4"); } ;
--				if ( damunt == 'item5' ) { $(this).removeClass("menu5"); } ;
--		        });   
--		});	
-  
-  <div class="row">
-			<h5 class="z-depth-5 indigo darken-4">Demon Souls</h5>  
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Doritos Souls</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- carrega de http://materializecss.com/ -->	
+    <link href="css/materialize.css" rel="stylesheet">	
 	
-			<ul class="collapsible" data-collapsible="accordion">
-    <li>
-      <div class="collapsible-header">Armas</div>
-      <div class="collapsible-body"><span>
-	      
-		<div class="collapsible-header">Dagas</div>
-      		<div class="collapsible-body"><span>
-	      		<a>Dagger</a>
-			<a>Paring Dagger</a>
-			<a>Secret Dagger</a>
-			<a>Baby's Nail</a>
-			
-		</span></div>
-	      
-		<div class="collapsible-header">Espadas Rectas</div>
-      		<div class="collapsible-body"><span>
-	        	<a>Espadas rectas de jefes</a> 
-		</span></div>
-	      
-		<div class="collapsible-header">Espadas Curvas</div>
-      		<div class="collapsible-body"><span>
-	      		<a>Espadas curvas de jefes</a>
-		</span></div>	
-			
-		<div class="collapsible-header">Estoques</div>
-      		<div class="collapsible-body"><span>
-	      		<a>Estoques de jefes</a>
-		</span></div>
-			
-		<div class="collapsible-header">Espadones</div>
-      		<div class="collapsible-body"><span>
-	      		<a>Great Sword</a>
-			<a>Keel Smasher</a>
-		</span></div>
-			
-		<div class="collapsible-header">Espadones Curvos</div>
-      		<div class="collapsible-body"><span>
-	      		<a>Espadones curvos de jefes</a>
-		</span></div>
-	      
-		<div class="collapsible-header">Ultra Espadones</div>
-      		<div class="collapsible-body"><span>
-	      		<a>Ultra espadones</a>
-		</span></div>
-			
-			
-		<div class="collapsible-header">Katanas</div>
-      		<div class="collapsible-body"><span>
-	      		<a>Katanas</a>
-		</span></div>
-			
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/jquery_321.js"></script>
+    <!--<script src="js/jquery.js"></script>-->
+    <script src="js/bootstrap.js"></script>
+	
+    <script src="js/materialize.js"></script>	
+	
+	<style>
+		  .container {
+			  padding: 80px 120px;
+		  }
+		  .person {
+			  border: 10px solid transparent;
+			  margin-bottom: 25px;
+			  width: 80%;
+			  height: 80%;
+			  opacity: 0.7;
+		  }
+		  .person:hover {
+		  border-color: #f1f1f1;
+		  }
+		  .bg-25 { 
+			background-color: #403E26; /* Color */
+			color: #ffffff;
+			  opacity: 0.7;
+		   }	  
+		  .menu1{
+		  	background-image: url("image/knight.jpg");  
+		    }
+		  .menu2{
+		  	background-image: url("image/ringedcity.jpg");  
+		    }
+		   .menu3{
+		  	background-image: url("image/knight.jpg");  
+		    }
+		   .menu4{
+			background-image: url("image/ringedcity.jpg");  
+		    }
+	       	   .menu5{
+			background-image: url("image/knight.jpg");  
+		    }
+		  
+	</style>
+ 
+</head>
+
+<body>    
+	<nav class="blue-grey darken-3">
+		    <div class="nav-wrapper">
+		      <a href="https://jolivera73.github.io/doritos-souls" class="brand-logo">Doritos Souls</a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+			<li id="item1" class="item"><a href="demon's_souls.html"> Demon Souls </a></li>
+			<li id="item2" class="item"><a href="dark_souls.html"> Dark Souls </a></li>
+			<li id="item3" class="item"><a href="dark_souls_ii.html"> Dark Souls II </a></li>
+		        <li id="item4" class="item"><a href="dark_souls_iii.html"> Dark Souls III </a></li>
+			<li id="item5" class="item"><a href="bloodborne.html"> Bloodborne</a></li>
+		      </ul>
+		    </div>
+		  </nav>
+	
+	
+
+		<!-- Menu Toggle Script -->
+		<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
 		
-		<div class="collapsible-header">Hachas</div>
-      		<div class="collapsible-body"><span>
-	      		<a>Hachas</a>
+		$(document).ready(function() {
+		   
+			$(".item").mouseenter(function() {
 			
+			var damunt = $(this).attr('id') ;
+				
+				//alert("estas damunt de : " +  damunt );
+				
+				if ( damunt == 'item1' ) { $(this).addClass("menu1"); } ;
+				if ( damunt == 'item2' ) { $(this).addClass("menu2"); } ;
+				if ( damunt == 'item3' ) { $(this).addClass("menu3"); } ;
+				if ( damunt == 'item4' ) { $(this).addClass("menu4"); } ;
+				if ( damunt == 'item5' ) { $(this).addClass("menu5"); } ;
+				
+		        });   
 			
-		<div class="collapsible-header">Grandes Hachas</div>
-      		<div class="collapsible-body"><span>
-	     		 <a>Grandes hachas</a>
-		</span></div>
+			$(".item").mouseleave(function() {
 			
-			
-		<div class="collapsible-header">Lanzas</div>
-      		<div class="collapsible-body"><span>
-	     		 <a>Lanzas</a>
-		</span></div>
-			
-			
-		<div class="collapsible-header">Alabardas</div>
-      		<div class="collapsible-body"><span>
-      			<a>Alabardas</a>
-		</span></div>
-			
-			
-		<div class="collapsible-header">Martillos/Pica</div>
-      		<div class="collapsible-body"><span>
-	      		<a>Martillos/Pica</a>
-		</span></div>
-			
-			
-		<div class="collapsible-header">Grandes Martillos</div>
-      		<div class="collapsible-body"><span>
-	      		<a>Grandes martillos</a>
-		</span></div>
-			
-			
-		<div class="collapsible-header">Guadañas</div>
-      		<div class="collapsible-body"><span>
-			<a>Guadañas</a>
-		</span></div>
-			
-	      </span></div>
-    </li>
-  
--</body>
--</html>
+				var damunt = $(this).attr('id') ;
+				
+				//alert("estas damunt de : " +  damunt );
+				
+				if ( damunt == 'item1' ) { $(this).removeClass("menu1"); } ;
+				if ( damunt == 'item2' ) { $(this).removeClass("menu2"); } ;
+				if ( damunt == 'item3' ) { $(this).removeClass("menu3"); } ;
+				if ( damunt == 'item4' ) { $(this).removeClass("menu4"); } ;
+				if ( damunt == 'item5' ) { $(this).removeClass("menu5"); } ;
+		        });   
+		});	
+   </body>
+</html>
