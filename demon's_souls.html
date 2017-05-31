@@ -120,7 +120,7 @@
 		    <div class="nav-wrapper">
 		      <a href="https://jolivera73.github.io/doritos-souls" class="brand-logo">Doritos Souls</a>
 		      <ul id="nav-mobile" class="right hide-on-med-and-down">
-			<li id="item1" class="item"><a href="demon's_souls.html"> Demon Souls </a></li>
+			<li id="item1" class="item"><a href="demon's_souls.html"> Demon's Souls </a></li>
 			<li id="item2" class="item"><a href="dark_souls.html"> Dark Souls </a></li>
 			<li id="item3" class="item"><a href="dark_souls_ii.html"> Dark Souls II </a></li>
 		        <li id="item4" class="item"><a href="dark_souls_iii.html"> Dark Souls III </a></li>
@@ -129,46 +129,7 @@
 		    </div>
 		  </nav>
 	
-	
-
-		<!-- Menu Toggle Script -->
-		<script>
-		$("#menu-toggle").click(function(e) {
-			e.preventDefault();
-			$("#wrapper").toggleClass("toggled");
-		});
-		
-		$(document).ready(function() {
-		   
-			$(".item").mouseenter(function() {
-			
-			var damunt = $(this).attr('id') ;
-				
-				//alert("estas damunt de : " +  damunt );
-				
-				if ( damunt == 'item1' ) { $(this).addClass("menu1"); } ;
-				if ( damunt == 'item2' ) { $(this).addClass("menu2"); } ;
-				if ( damunt == 'item3' ) { $(this).addClass("menu3"); } ;
-				if ( damunt == 'item4' ) { $(this).addClass("menu4"); } ;
-				if ( damunt == 'item5' ) { $(this).addClass("menu5"); } ;
-				
-		        });   
-			
-			$(".item").mouseleave(function() {
-			
-				var damunt = $(this).attr('id') ;
-				
-				//alert("estas damunt de : " +  damunt );
-				
-				if ( damunt == 'item1' ) { $(this).removeClass("menu1"); } ;
-				if ( damunt == 'item2' ) { $(this).removeClass("menu2"); } ;
-				if ( damunt == 'item3' ) { $(this).removeClass("menu3"); } ;
-				if ( damunt == 'item4' ) { $(this).removeClass("menu4"); } ;
-				if ( damunt == 'item5' ) { $(this).removeClass("menu5"); } ;
-		        });   
-		});
-			//Texto
-		</div>
+	</div>
 	
 		<div class="row">
 			<h5 class="z-depth-5 indigo darken-4">Demon Souls</h5>  
@@ -347,7 +308,7 @@
 						</li></ul>
 				       </span></ul>
 						 
-		<!-- Magias -->
+		//Magias
 			<ul class="collapsible" data-collapsible="accordion">
 			    <li>
 			      <div class="collapsible-header">Magias</div>
@@ -361,5 +322,46 @@
 			    </li>
 				    
 			  </ul>
+	
+	
+
+		<!-- Menu Toggle Script -->
+		<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+		});
+		
+		$(document).ready(function() {
+		   
+			$(".item").mouseenter(function() {
+			
+			var damunt = $(this).attr('id') ;
+				
+				//alert("estas damunt de : " +  damunt );
+				
+				if ( damunt == 'item1' ) { $(this).addClass("menu1"); } ;
+				if ( damunt == 'item2' ) { $(this).addClass("menu2"); } ;
+				if ( damunt == 'item3' ) { $(this).addClass("menu3"); } ;
+				if ( damunt == 'item4' ) { $(this).addClass("menu4"); } ;
+				if ( damunt == 'item5' ) { $(this).addClass("menu5"); } ;
+				
+		        });   
+			
+			$(".item").mouseleave(function() {
+			
+				var damunt = $(this).attr('id') ;
+				
+				//alert("estas damunt de : " +  damunt );
+				
+				if ( damunt == 'item1' ) { $(this).removeClass("menu1"); } ;
+				if ( damunt == 'item2' ) { $(this).removeClass("menu2"); } ;
+				if ( damunt == 'item3' ) { $(this).removeClass("menu3"); } ;
+				if ( damunt == 'item4' ) { $(this).removeClass("menu4"); } ;
+				if ( damunt == 'item5' ) { $(this).removeClass("menu5"); } ;
+		        });   
+		});
+		
+		
    </body>
 </html>
